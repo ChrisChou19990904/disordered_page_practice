@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* 錯誤訊息的基本樣式 */
+#error-message {
+    font-size: 24px;
+    color: green;
+    background-color: orange;
+    padding: 20px;
+    border: 2px solid green;
+    display: none; /* 預設為隱藏 */
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 5px;
+    animation: blink 1s step-start infinite; /* 閃爍動畫 */
+}
+
+/* 閃爍動畫 */
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
+}
